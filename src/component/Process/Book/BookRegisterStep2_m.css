@@ -1,0 +1,9 @@
+@media (max-width: 1024px) { 
+    .cb-book-register-step2 {
+        flex: 1;
+    }
+
+    .cb-book-register-step2 .summary {
+        flex: 1 0 300px;
+    }
+}

@@ -1,0 +1,180 @@
+.cb-signin-box {
+    width: 460px;
+    max-height: 460px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    cursor: default;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05);
+}
+
+.cb-signin-box .head {
+    flex: 0 0 50px;
+    height: 50px;
+}
+
+.cb-signin-box .head .logo.shadows {
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: -5px 0px 5px rgba(65, 81, 160, 0.2);
+    color: #000000;
+    letter-spacing: -0.05em;
+    user-select: none;
+    font-size: 25px;
+}
+
+.cb-signin-box .head .logo span:not(:first-child) {
+    /* font-family: 'Brownies'; */
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+
+.cb-signin-box .head .logo span:nth-child(2) {
+    color: #5D6DBE;
+
+}
+
+.cb-signin-box .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cb-signin-box .body .sns {
+    flex: 1;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cb-signin-box .body .sns .kakao {
+    width: 100%;
+    height: 50px;
+    background-color: #ffe812;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.cb-signin-box .body .line {
+    flex: 1;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px dotted #c0c3cf;
+}
+
+.cb-signin-box .body .line::after {
+    content: 'OR';
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 13px;
+    color: #c0c3cf;
+    background-color: #ffffff;
+}
+
+.cb-signin-box .body .email, 
+.cb-signin-box .body .password {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.cb-signin-box .body input {
+    border: 1px solid #c0c3cf;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cb-signin-box .body input:focus {
+    border: 1px solid #5D6DBE;
+}
+
+.cb-signin-box .body .email::before {
+    content: 'E-MAIL';
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 9px;
+    color: #c0c3cf;
+    background: #ffffff;
+    padding: 5px 5px 0 5px;
+}
+
+.cb-signin-box .body .email:focus-within::before {
+    color: #5D6DBE;
+    font-weight: bold;
+}
+
+.cb-signin-box .body .password::before {
+    content: 'PASSWORD';
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 9px;
+    color: #c0c3cf;
+    background: #ffffff;
+    padding: 5px 5px 0 5px;
+}
+
+.cb-signin-box .body .password:focus-within::before {
+    color: #5D6DBE;
+    font-weight: bold;
+}
+
+.cb-signin-box .foot .error {
+    height: 15px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: red;
+}
+
+.cb-signin-box .foot .button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cb-signin-box .foot .button .item {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(145,152,229,1);
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 5.5px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    font-size: 13px;
+}
+
+.cb-signin-box .foot .button a.item {
+    width: calc(90px - 11px);
+}
+
+.cb-signin-box .foot .button .item:first-child {
+    background: linear-gradient(90deg, rgba(93,109,190,1) 0%, rgba(145,152,229,1) 100%);
+}
+
+.cb-signin-box .foot .button .item:last-child {
+    background: linear-gradient(270deg, rgba(93,109,190,1) 0%, rgba(145,152,229,1) 100%);
+}
+
+.cb-signin-box .foot .link {
+    font-size: 13px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,41 @@
+.cb-booklist-type-r {
+    flex: 0 0 250px;
+    width: calc(100% - 20px);
+    height: 250px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+/* 스크롤바 */
+.cb-booklist-type-r::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.cb-booklist-type-r::-webkit-scrollbar-thumb {
+    border: 0px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    /* border-radius: 5.5px; */
+    /* background-color: rgba(142, 142, 142, 0.9); */
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cb-booklist-type-r::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cb-booklist-type-r .btn-more {
+    /* background: linear-gradient(180deg, rgba(93,109,190,1) 0%, rgba(145,152,229,1) 100%); */
+    padding: 10px;
+    /* color: #ffffff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}

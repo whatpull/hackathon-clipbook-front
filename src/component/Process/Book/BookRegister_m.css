@@ -1,0 +1,17 @@
+@media (max-width: 1024px) { 
+    .cb-book-register {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        max-width: none;
+        border-radius: 0px;
+    }
+
+    .cb-book-register .head .title {
+        font-size: 13px;
+    }
+}

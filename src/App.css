@@ -1,0 +1,238 @@
+/* [공통] */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/MaterialIcons-Regular.eot'); /* For IE6-8 */
+    src: local('Material Icons'),
+         local('MaterialIcons-Regular'),
+         url('/font/MaterialIcons-Regular.woff2') format('woff2'),
+         url('/font/MaterialIcons-Regular.woff') format('woff'),
+         url('/font/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BonusHearts';
+    src: url('/font/BonusHearts.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brownies';
+    src: url('/font/The-Brownies.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* 
+ * Nanum Barun Gothic (Korean) http://hangeul.naver.com
+ */
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 200;
+    src: url(/font/NanumBarunGothic/NanumBarunGothicUltraLight.eot);
+    src: local('Nanum Barun Gothic UltraLight'),
+            local('NanumBarunGothicUltraLight'),
+            url(/font/NanumBarunGothic/NanumBarunGothicUltraLight.eot?#iefix) format('embedded-opentype'),
+            url(/font/NanumBarunGothic/NanumBarunGothicUltraLight.woff2) format('woff2'),
+            url(/font/NanumBarunGothic/NanumBarunGothicUltraLight.woff) format('woff'),
+            url(/font/NanumBarunGothic/NanumBarunGothicUltraLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/font/NanumBarunGothic/NanumBarunGothicLight.eot);
+    src: local('Nanum Barun Gothic Light'),
+            local('NanumBarunGothicLight'),
+            url(/font/NanumBarunGothic/NanumBarunGothicLight.eot?#iefix) format('embedded-opentype'),
+            url(/font/NanumBarunGothic/NanumBarunGothicLight.woff2) format('woff2'),
+            url(/font/NanumBarunGothic/NanumBarunGothicLight.woff) format('woff'),
+            url(/font/NanumBarunGothic/NanumBarunGothicLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/font/NanumBarunGothic/NanumBarunGothic.eot);
+    src: local('Nanum Barun Gothic'),
+            local('NanumBarunGothic'),
+            url(/font/NanumBarunGothic/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+            url(/font/NanumBarunGothic/NanumBarunGothic.woff2) format('woff2'),
+            url(/font/NanumBarunGothic/NanumBarunGothic.woff) format('woff'),
+            url(/font/NanumBarunGothic/NanumBarunGothic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/font/NanumBarunGothicBold.eot);
+    src: local('Nanum Barun Gothic Bold'),
+            local('NanumBarunGothicBold'),
+            url(/font/NanumBarunGothic/NanumBarunGothicBold.eot?#iefix) format('embedded-opentype'),
+            url(/font/NanumBarunGothic/NanumBarunGothicBold.woff2) format('woff2'),
+            url(/font/NanumBarunGothic/NanumBarunGothicBold.woff) format('woff'),
+            url(/font/NanumBarunGothic/NanumBarunGothicBold.ttf) format('truetype');
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nanum Barun Gothic';
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    line-height: 1.3em;
+    overflow: hidden;
+    user-select: none;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+div.abcRioButton:hover, div.abcRioButton:focus {
+    outline: none !important;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15) !important;
+}
+
+a, input, textarea, button {
+    outline: none;
+}
+
+a, button {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+input {
+    border: none;
+    font-size: 13px;
+    font-family: 'Malgun Gothic';
+}
+
+textarea {
+    border: none;
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Malgun Gothic';
+    resize: none;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #e2e2e2;
+    font-weight: 400;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #e2e2e2;
+    font-weight: 400;
+}
+  
+::placeholder {
+    color: #e2e2e2;
+    font-weight: 400;
+}
+
+/* 페이퍼 효과 */
+.paper {
+    background: linear-gradient(45deg,  #ffffff 0%, #fbfbff 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding-left: 20px;
+    border-radius: 2px 4px 4px 2px;
+    -webkit-box-shadow: 6px 6px 4px 0px rgba(151, 146, 153, 0.3);
+    -moz-box-shadow: 6px 6px 4px 0px rgba(151, 146, 153, 0.3);
+    box-shadow: 6px 6px 4px 0px rgba(151, 146, 153, 0.3);
+    position: relative;
+}
+
+.paper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 3px 3px 0;
+    box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.paper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 3px;
+    background: rgba(0,0,0,0.05);
+    box-shadow: 1px 0 2px rgba(255, 255, 255, 0.05);
+}
+
+/* 구글 버튼 커스텀 */
+#google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #444;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: thin solid #888;
+}
+#google:hover {
+    cursor: pointer;
+}
+#google span.label {
+    font-family: serif;
+    font-weight: normal;
+}
+#google span.icon {
+    background: url('/img/g-normal.png') transparent 5px 50% no-repeat;
+    width: 42px;
+    height: 42px;
+}
+#google span.buttonText {
+    text-align: right;
+    padding-right: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
+}

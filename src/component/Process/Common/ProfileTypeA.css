@@ -1,0 +1,52 @@
+.cb-profile.type-a {
+    width: 100%;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cb-profile.type-a.cursor-auto {
+    cursor: auto;
+}
+
+.cb-profile.type-a.center {
+    justify-content: flex-start;
+}
+
+.cb-profile.type-a .cb-thumbnail {
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cb-profile.type-a .cb-thumbnail .picture{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: solid 1px #f2f2f2;
+}
+
+.cb-profile.type-a .cb-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cb-profile.type-a .cb-profile .name {
+    font-weight: bold;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.cb-profile.type-a .cb-profile .account {
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}

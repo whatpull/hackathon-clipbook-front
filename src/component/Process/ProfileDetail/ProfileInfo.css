@@ -1,0 +1,8 @@
+.cb-profile-info {
+    width: 100%;
+    flex: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

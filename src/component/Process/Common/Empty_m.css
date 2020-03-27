@@ -1,0 +1,10 @@
+@media (max-width: 1024px) { 
+    .cb-empty {
+        background-position: center bottom;
+        background-size: cover;
+        justify-content: flex-start;
+        padding-top: 10px;
+        min-height: 300px;
+        margin-bottom: 20px;
+    }
+}

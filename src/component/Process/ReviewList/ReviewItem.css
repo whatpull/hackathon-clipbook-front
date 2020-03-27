@@ -1,0 +1,122 @@
+.cb-reviewitem {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: default;
+    margin-bottom: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.cb-reviewitem:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 16px 16px 0;
+    border-style: solid;
+    border-color: #f2f2f2 #fafafa;
+}
+
+.cb-reviewitem .review-info {
+    flex: 0 0 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cb-reviewitem .review-info .account {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cb-reviewitem .review-info .rating {
+    color: #999999;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cb-reviewitem .review-content {
+    position: relative;
+    padding: 0 10px;
+}
+
+.cb-reviewitem .review-content .review {
+    max-height: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.4s;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* 스크롤바 */
+.cb-reviewitem .review-content .review::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.cb-reviewitem .review-content .review::-webkit-scrollbar-thumb {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    /* border-radius: 5.5px; */
+    /* background-color: rgba(142, 142, 142, 0.9); */
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cb-reviewitem .review-content .review::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cb-reviewitem .review-content .review.open {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cb-reviewitem .review-content .review.close {
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cb-reviewitem .review-content:hover::after {
+    content: "Click to expand.";
+    font-size: 11px;
+    width: 120px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    text-align: center;
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.cb-reviewitem .review-content .btn-more {
+    padding: 2px;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -35px;
+    left: calc(50% - 21px);
+    z-index: 1;
+    /* box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2); */
+}

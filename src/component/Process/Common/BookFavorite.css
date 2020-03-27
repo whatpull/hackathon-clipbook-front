@@ -1,0 +1,12 @@
+.cb-book-favorite {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: orange;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 2px;
+    z-index: 1;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}

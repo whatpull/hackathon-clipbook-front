@@ -1,0 +1,117 @@
+.cb-selectbox-category {
+    position: relative;
+    width: 250px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.cb-selectbox-category select {
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+.cb-selectbox-category select::-ms-expand {
+    display: none;
+}
+
+.cb-selectbox-category .select-selected {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.cb-selectbox-category .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #e2e2e2 transparent transparent transparent;
+}
+
+.cb-selectbox-category .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #e2e2e2 transparent;
+    top: 7px;
+}
+
+.cb-selectbox-category .select-items div,.select-selected {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.cb-selectbox-category .select-items {
+    position: absolute;
+    background-color: #ffffff;
+    top: calc(100% - 2px);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-height: 200px;
+    overflow: auto;
+    border-radius: 0 0 5px 5px;
+}
+
+/* 스크롤바 */
+.cb-selectbox-category .select-items::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.cb-selectbox-category .select-items::-webkit-scrollbar-thumb {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 0px;
+    background-color: #f2f2f2;
+}
+
+.cb-selectbox-category .select-items::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* 검색 */
+.cb-selectbox-category .select-items .select-items-search input {
+    width: calc(100% - 10px);
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #fafafa;
+    border: none;
+}
+
+.cb-selectbox-category .select-hide {
+    display: none;
+}
+
+.cb-selectbox-category .select-items div:not(.select-items-search):hover, .same-as-selected {
+    background-color: #f2f2f2;
+}
+
+/* 타입(인풋) - [모드] default : filter, input : register*/
+.cb-selectbox-category.input {
+    box-shadow: inset 0px 0px 0px 1px #c0c3cf;
+    border-radius: 2px;
+    padding: 7px 0;
+}
+
+.cb-selectbox-category.input .select-selected {
+    background-color: transparent;
+}
+
+.cb-selectbox-category.input .select-selected::after {
+    top: 20px;
+}
+
+.cb-selectbox-category.input .select-selected.select-arrow-active:after {
+    top: 13px;
+}
+
+.cb-selectbox-category.input .select-items {
+    border: 1px solid #c0c3cf;
+    border-radius: 2px;
+    top: calc(100% + 1px);
+}

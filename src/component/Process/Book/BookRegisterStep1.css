@@ -1,0 +1,57 @@
+.cb-book-register-step1 .empty {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cb-book-register-step1 .thumbnail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cb-book-register-step1 .thumbnail .preview {
+    width: 200px !important;
+    height: 250px !important;
+    overflow: hidden;
+    margin-left: auto;
+    border: 1px solid #e2e2e2;
+    background-color: #ffffff;
+}
+
+.cb-book-register-step1 .file {
+    margin: 20px 0 10px 0;
+}
+
+.cb-book-register-step1 .content {
+    flex: 1;
+}
+
+.cb-book-register-step1 .content .highlight {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cb-book-register-step1 .button {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cb-book-register-step1 .button .item {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(93,109,190,1) 0%, rgba(145,152,229,1) 100%);
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 5.5px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    font-size: 13px;
+}

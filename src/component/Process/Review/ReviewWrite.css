@@ -1,0 +1,151 @@
+.cb-review-write {
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+    right: 20px;
+    bottom: 0px;
+    background-color: #ffffff;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.1);
+    cursor: default;
+    z-index: 999;
+}
+
+.cb-review-write.open {
+    display: flex;
+}
+
+.cb-review-write.close {
+    display: none;
+}
+
+.cb-review-write .head {
+    flex: 0 0 30px;
+    height: 30px;
+    /* background: linear-gradient(90deg, rgba(93,109,190,1) 0%, rgba(145,152,229,1) 100%); */
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,91,91,1) 100%);
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.cb-review-write .head .title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.cb-review-write .head .close .item {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.cb-review-write .body {
+    flex: 1;
+    padding: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cb-review-write .body .rating {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.cb-review-write .body .review {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 7px;
+}
+
+.cb-review-write .body .review textarea {
+    width: calc(100% - 22px);
+    height: 100%;
+    border: 1px solid #c0c3cf;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* 스크롤바 */
+.cb-review-write .body .review textarea::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.cb-review-write .body .review textarea::-webkit-scrollbar-thumb {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cb-review-write .body .review textarea::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cb-review-write .body .review textarea:focus {
+    border: 1px solid red;
+}
+
+.cb-review-write .body .review::before {
+    content: 'REVIEW';
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 9px;
+    color: #c0c3cf;
+    background: #ffffff;
+    padding: 5px 5px 0 5px;
+}
+
+.cb-review-write .body .review:focus-within::before {
+    color: red;
+    font-weight: bold;
+}
+
+.cb-review-write .foot {
+    flex: 0 0 30px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.cb-review-write .foot .button .item {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* background: linear-gradient(90deg, rgba(93,109,190,1) 0%, rgba(145,152,229,1) 100%); */
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,91,91,1) 100%);
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 5.5px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.05);
+    font-size: 13px;
+}

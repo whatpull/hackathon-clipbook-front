@@ -1,0 +1,32 @@
+@media (max-width: 1024px) { 
+    .cb-book-register-step1 .thumbnail {
+        position: relative;
+    }
+
+    .cb-book-register-step1 .file {
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cb-book-register-step1 .empty {
+        display: none;
+    }
+
+    .cb-book-register-step1 .thumbnail .preview {
+        visibility: hidden;
+        border: none;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .cb-book-register-step1 .button {
+        justify-content: center;
+        margin: 0 0 20px 0;
+    }
+
+    .cb-book-register-step1 .content {
+        flex: 0;
+    }
+}

@@ -1,0 +1,12 @@
+@media (max-width: 1024px) { 
+    .cb-book-detail {
+        width: calc(100vw - 70px);
+        height: calc(100vh - 110px);
+        padding: 5px 10px;
+        flex-direction: column;
+    }
+
+    .cb-book-detail .max-wrapper {
+        flex-direction: column;
+    }
+}

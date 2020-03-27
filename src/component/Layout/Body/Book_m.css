@@ -1,0 +1,23 @@
+@media (max-width: 1024px) { 
+    .cb-book {
+        width: calc(100vw - 70px);
+        height: calc(100vh - 110px);
+        padding: 5px 10px;
+    }
+
+    .cb-book .search-query {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin: 20px 0;
+    }
+
+    .cb-book .search-query .query{
+        margin-bottom: 15px !important;
+    }
+
+    .cb-book .search-query div {
+        margin: 0px !important;
+    }
+}

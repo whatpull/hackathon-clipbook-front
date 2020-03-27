@@ -1,0 +1,67 @@
+.cb-profile-detail {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: calc(100vw - 110px);
+    height: calc(100vh - 140px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #FAFAFA;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 20px 30px;
+}
+
+.cb-profile-detail .max-wrapper {
+    max-width: 1170px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cb-profile-detail .icon-symbol {
+    width: 40px;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation:spin 1s linear infinite;
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+}
+
+@-moz-keyframes spin { 100% { margin-left: 0px; margin-right: 0px; } }
+@-webkit-keyframes spin { 100% { margin-left: 0px; margin-right: 0px; } }
+@keyframes spin { 100% { margin-left: 0px; margin-right: 0px; } }
+
+/* 스크롤바 */
+.cb-profile-detail::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.cb-profile-detail::-webkit-scrollbar-thumb {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cb-profile-detail::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cb-profile-detail .title {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}

@@ -1,0 +1,11 @@
+@media (max-width: 1024px) { 
+    .cb-signup-box {
+        border: none;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+
+    .cb-signup-box .head .logo.shadows {
+        text-align: center;
+    }
+}

@@ -1,0 +1,116 @@
+.cb-book-register-step2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cb-book-register-step2:first-child {
+    margin-top: 7px;
+}
+
+.cb-book-register-step2 .title, 
+.cb-book-register-step2 .author,
+.cb-book-register-step2 .category,
+.cb-book-register-step2 .summary {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.cb-book-register-step2 .summary {
+    height: 300px;
+}
+
+.cb-book-register-step2 input {
+    border: 1px solid #c0c3cf;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.cb-book-register-step2 input:focus {
+    border: 1px solid #5D6DBE;
+}
+
+.cb-book-register-step2 textarea {
+    width: calc(100% - 22px);
+    height: 100%;
+    border: 1px solid #c0c3cf;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* 스크롤바 */
+.cb-book-register-step2 textarea::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.cb-book-register-step2 textarea::-webkit-scrollbar-thumb {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    /* border-radius: 5.5px; */
+    /* background-color: rgba(142, 142, 142, 0.9); */
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cb-book-register-step2 textarea::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cb-book-register-step2 textarea:focus {
+    border: 1px solid #5D6DBE;
+}
+
+.cb-book-register-step2 .title::before {
+    content: 'TITLE';
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 9px;
+    color: #c0c3cf;
+    background: #ffffff;
+    padding: 5px 5px 0 5px;
+}
+
+.cb-book-register-step2 .title:focus-within::before {
+    color: #5D6DBE;
+    font-weight: bold;
+}
+
+.cb-book-register-step2 .author::before {
+    content: 'AUTHOR';
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 9px;
+    color: #c0c3cf;
+    background: #ffffff;
+    padding: 5px 5px 0 5px;
+}
+
+.cb-book-register-step2 .author:focus-within::before {
+    color: #5D6DBE;
+    font-weight: bold;
+}
+
+.cb-book-register-step2 .summary::before {
+    content: 'SUMMARY';
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: 9px;
+    color: #c0c3cf;
+    background: #ffffff;
+    padding: 5px 5px 0 5px;
+}
+
+.cb-book-register-step2 .summary:focus-within::before {
+    color: #5D6DBE;
+    font-weight: bold;
+}

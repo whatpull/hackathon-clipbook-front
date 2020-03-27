@@ -1,0 +1,6 @@
+@media (max-width: 1024px) { 
+    .cb-login {
+        background-color: #ffffff;
+        align-items: flex-start;
+    }
+}

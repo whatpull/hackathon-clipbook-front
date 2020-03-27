@@ -1,0 +1,6 @@
+@media (max-width: 1024px) { 
+    .cb-join {
+        background-color: #ffffff;
+        align-items: flex-start;
+    }
+}

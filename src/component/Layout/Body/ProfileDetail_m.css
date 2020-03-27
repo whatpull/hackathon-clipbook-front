@@ -1,0 +1,7 @@
+@media (max-width: 1024px) { 
+    .cb-profile-detail {
+        width: calc(100vw - 70px);
+        height: calc(100vh - 110px);
+        padding: 5px 10px;
+    }
+}

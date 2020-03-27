@@ -1,0 +1,19 @@
+.cb-review-rating span {
+    color: #f2f2f2;
+    font-family: 'BonusHearts';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.cb-review-rating.cursor-pointer span {
+    cursor: pointer;
+}
+
+.cb-review-rating.cursor-default span {
+    cursor: default;
+}
+
+.cb-review-rating span.active {
+    color: red;
+}

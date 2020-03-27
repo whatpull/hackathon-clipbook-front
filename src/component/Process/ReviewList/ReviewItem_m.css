@@ -1,0 +1,19 @@
+@media (max-width: 767.98px) { 
+    .cb-reviewitem .review-info {
+        flex-direction: column;
+        flex: 0 0 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cb-reviewitem .review-info .account {
+        width: 100%;
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    .cb-reviewitem .review-info .rating {
+        width: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+@media (min-width: 1920px) { 
+    .cb-nav {
+        display: none !important;
+    }
+
+    .cb-book, .cb-book-detail, .cb-profile-detail, .cb-login, .cb-join {
+        left: 0 !important;
+        width: calc(100vw - 60px) !important;
+    }
+
+    .cb-search .left .item {
+        position: relative !important;
+        top: initial !important;
+        left: initial !important;
+        margin: 0 5px;
+    }
+}
